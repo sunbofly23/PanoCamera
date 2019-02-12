@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/previewLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#000">
+
+    <TextureView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/textureView"/>
+
+
+    <RelativeLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        android:background="#a000">
+
+
+        <ImageView
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:id="@+id/openFlash"
+            android:gravity="center"
+            android:src="@drawable/flashlight_off_icn"
+            android:onClick="onClick"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:id="@+id/vv_top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/vv_base"
+            android:layout_marginBottom="24dp"
+            android:background="#7ecccccc" />
+
+
+        <View
+            android:id="@+id/vv_base"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true" />
+
+        <View
+            android:id="@+id/vv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/vv_base"
+            android:layout_marginTop="24dp"
+            android:background="#7ecccccc" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_height="96dp"
+        android:layout_width="match_parent"
+        android:id="@+id/botomLayout"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:background="#a000"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/btnCancel"
+                android:text="取消"
+                android:textColor="#FFF"
+                android:clickable="true"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/handle"
+                android:src="@drawable/bn_camera_capture_selector"
+                android:scaleType="center"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x:"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv"
+                android:text=""
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv5"
+                android:text=""
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="frame:"
+                android:textColor="#FFF" />
+
+
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/tv2"
+                android:text=""
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="y:"
+                android:textColor="#FFF" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
